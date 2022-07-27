@@ -29,13 +29,6 @@ async function main() {
             seller: user,
         });
         await item.save();
-
-        const comment = new Comment({
-            body: `body ${i}`,
-            seller: user,
-            item: item,
-        });
-        await comment.save();
     }
 }
 
